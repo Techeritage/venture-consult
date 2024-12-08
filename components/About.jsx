@@ -22,7 +22,7 @@ const About = () => {
         streamline your journey and deliver expert guidance. Our experienced
         professionals combine deep industry knowledge with a commitment to
         excellence, ensuring that your business&apos;s financial operations are
-        in trusted hands.
+        in trusted hand.
       </p>
     </section>
   );
