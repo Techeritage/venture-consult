@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Services = () => {
   return (
-    <section className="sectionStyle border-t-2 border-black bg-secondaryBg !text-black space-y-4">
+    <section className="sectionStyle border-t-2 border-black bg-secondaryBg2 !text-black space-y-4">
       <div className="flex items-center gap-3">
         <Sparkle fill="#000" size={18} />
         <h2>OUR SERVICES</h2>

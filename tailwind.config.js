@@ -10,7 +10,10 @@ module.exports = {
     extend: {
       colors: {
         lightBg: "#fbcb2b",
-        secondaryBg: "#ece6d8"
+        primaryBg: "#252525",
+        primaryBg2: "#252525d9",
+        secondaryBg: "#ece6d8",
+        secondaryBg2: "#ece6d8b3",
       },
       borderRadius: {
         lg: "var(--radius)",
