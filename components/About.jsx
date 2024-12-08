@@ -1,16 +1,61 @@
+"use client";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Sparkle } from "lucide-react";
 
+// Register ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
 const About = () => {
+  // Create refs for animation targets
+  const sectionRef = useRef(null);
+  const headingRef = useRef(null);
+  const textRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      // Animate the heading
+      gsap.from(headingRef.current, {
+        opacity: 0,
+        y: 50,
+        ease: "power1.in",
+        duration: 1,
+        scrollTrigger: {
+          trigger: sectionRef.current, // Trigger animation when section is in view
+          start: "top 80%", // Start when the top of the section reaches 80% of viewport height
+        },
+      });
+
+      // Animate the text
+      gsap.from(textRef.current, {
+        opacity: 0,
+        y: 50,
+        duration: 1,
+        delay: 0.2, // Delay to stagger animations
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 40%",
+        },
+      });
+    }, sectionRef); // Context cleanup for React 18 strict mode
+
+    return () => ctx.revert(); // Clean up animations
+  }, []);
+
   return (
-    <section className="sectionStyle bg-secondaryBg !text-black space-y-4">
+    <section
+      ref={sectionRef}
+      className="sectionStyle bg-secondaryBg !text-black space-y-4"
+    >
       <div className="flex items-center gap-3">
         <Sparkle fill="#000" size={18} />
         <h2>ABOUT</h2>
       </div>
-      <h1 className="max-w-[80%]">
+      <h1 ref={headingRef} className="max-w-[80%]">
         Your Trusted Partner in Compliance & Tax Solutions
       </h1>
-      <p>
+      <p ref={textRef}>
         Welcome to Venture Consult, a leading agency specializing in tax
         consultancy and compliance certification services. We are dedicated to
         helping businesses stay compliant, meet their regulatory obligations,
