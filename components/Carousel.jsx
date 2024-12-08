@@ -1,0 +1,63 @@
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
+import gsap from "gsap";
+import { slides } from "@/lib/constants";
+import Image from "next/image";
+
+const Carousel = () => {
+  return (
+    <Swiper
+      modules={[Autoplay]}
+      spaceBetween={30}
+      slidesPerView={1}
+      loop={true}
+      autoplay={{
+        delay: 10000, // Auto-slide every 3 seconds
+        disableOnInteraction: false,
+      }}
+      onSlideChange={(swiper) => {
+        const currentSlide = swiper.slides[swiper.activeIndex];
+        const textElements = currentSlide.querySelectorAll(".text-content");
+
+        gsap.fromTo(
+          textElements,
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 1, stagger: 0.2 }
+        );
+      }}
+    >
+      {slides.map((slide, index) => (
+        <SwiperSlide key={index}>
+          <div className="relative h-screen">
+            <Image
+              src={slide.image}
+              alt="slide image"
+              layout="fill"
+              objectFit="cover"
+            />
+            <div className="absolute bg-black/30 top-0 bottom-0 left-0 right-0 content">
+              <div className="relative w-full h-full flex items-center px-[3%] lg:px-[5%]">
+                <div>
+                  <h1 className="text-content max-w-[85%] md:max-w-[65%]">
+                    {slide.headline}
+                  </h1>
+                  <p className="mt-2 text-content max-w-[75%] md:max-w-[50%] opacity-90">
+                    {slide.description}
+                  </p>
+                  <button className="mt-6 px-4 py-3 bg-lightBg text-white rounded-full text-content">
+                    {slide.cta}
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
+
+export default Carousel;
