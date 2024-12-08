@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Carousel from "@/components/Carousel";
+import Services from "@/components/Services";
 import React from "react";
 
 const HomePage = () => {
@@ -7,6 +8,7 @@ const HomePage = () => {
     <main>
       <Carousel />
       <About />
+      <Services />
     </main>
   );
 };
