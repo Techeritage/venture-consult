@@ -15,7 +15,7 @@ const Carousel = () => {
       slidesPerView={1}
       loop={true}
       autoplay={{
-        delay: 10000, // Auto-slide every 3 seconds
+        delay: 3000, // Auto-slide every 3 seconds
         disableOnInteraction: false,
       }}
       onSlideChange={(swiper) => {
