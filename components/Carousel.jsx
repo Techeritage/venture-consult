@@ -50,10 +50,10 @@ const Carousel = () => {
                   <h1 className="text-content max-w-[95%] md:max-w-[65%]">
                     {slide.headline}
                   </h1>
-                  <p className="mt-2 text-content max-w-[75%] md:max-w-[45%] text-opacity-90">
+                  <p className="mt-4 text-content max-w-[75%] md:max-w-[45%] text-opacity-90">
                     {slide.description}
                   </p>
-                  <button className="mt-8 px-6 h-[56px] bg-lightBg font-semibold text-black rounded-full text-content">
+                  <button className="mt-10 px-6 h-[56px] bg-lightBg font-semibold text-black rounded-full text-content">
                     {slide.cta}
                   </button>
                 </div>
