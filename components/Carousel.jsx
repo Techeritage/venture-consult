@@ -38,7 +38,7 @@ const Carousel = () => {
               layout="fill"
               objectFit="cover"
             />
-            <div className="absolute bg-black/30 top-0 bottom-0 left-0 right-0 content">
+            <div className="absolute bg-black/50 top-0 bottom-0 left-0 right-0 content">
               <div className="relative w-full h-full flex items-center px-[3%] lg:px-[5%]">
                 <div>
                   <h1 className="text-content max-w-[85%] md:max-w-[65%]">
@@ -47,7 +47,7 @@ const Carousel = () => {
                   <p className="mt-2 text-content max-w-[75%] md:max-w-[50%] opacity-90">
                     {slide.description}
                   </p>
-                  <button className="mt-6 px-4 py-3 bg-lightBg text-white rounded-full text-content">
+                  <button className="mt-8 px-6 py-3 bg-lightBg text-black rounded-full text-content">
                     {slide.cta}
                   </button>
                 </div>
