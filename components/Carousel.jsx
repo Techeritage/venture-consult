@@ -47,13 +47,13 @@ const Carousel = () => {
               <Header1 />
               <div className="relative w-full h-full flex items-center px-[3%] lg:px-[5%]">
                 <div>
-                  <h1 className="text-content max-w-[95%] md:max-w-[65%]">
+                  <h1 className="text-content max-w-[95%] md:max-w-[65%] opacity-0 translate-y-[200px]">
                     {slide.headline}
                   </h1>
-                  <p className="mt-2 text-content max-w-[75%] md:max-w-[45%] opacity-90">
+                  <p className="mt-2 text-content max-w-[75%] md:max-w-[45%] opacity-0 translate-y-[200px] text-opacity-90">
                     {slide.description}
                   </p>
-                  <button className="mt-8 px-6 h-[56px] bg-lightBg font-semibold text-black rounded-full text-content">
+                  <button className="opacity-0 translate-y-[200px] mt-8 px-6 h-[56px] bg-lightBg font-semibold text-black rounded-full text-content">
                     {slide.cta}
                   </button>
                 </div>
