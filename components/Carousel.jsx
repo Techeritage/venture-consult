@@ -30,7 +30,7 @@ const Carousel = () => {
         gsap.fromTo(
           textElements,
           { opacity: 0, y: 50 },
-          { opacity: 1, y: 0, duration: 1, stagger: 0.2 }
+          { opacity: 1, y: 0, duration: 0.5, stagger: 0.2 }
         );
       }}
     >
@@ -53,7 +53,7 @@ const Carousel = () => {
                   <p className="mt-4 text-content max-w-[75%] md:max-w-[45%] text-opacity-90">
                     {slide.description}
                   </p>
-                  <button className="mt-10 px-6 h-[56px] bg-lightBg font-semibold text-black rounded-full text-content">
+                  <button className="mt-10 px-6 h-[56px] bg-lightBg font-semibold text-black text-content">
                     {slide.cta}
                   </button>
                 </div>

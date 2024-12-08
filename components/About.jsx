@@ -19,8 +19,7 @@ const About = () => {
       gsap.from(headingRef.current, {
         opacity: 0,
         y: 50,
-        ease: "power1.in",
-        duration: 1,
+        duration: 0.3,
         scrollTrigger: {
           trigger: sectionRef.current, // Trigger animation when section is in view
           start: "top 80%", // Start when the top of the section reaches 80% of viewport height
@@ -31,7 +30,7 @@ const About = () => {
       gsap.from(textRef.current, {
         opacity: 0,
         y: 50,
-        duration: 1,
+        duration: 0.3,
         delay: 0.2, // Delay to stagger animations
         scrollTrigger: {
           trigger: sectionRef.current,
