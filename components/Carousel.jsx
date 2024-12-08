@@ -36,14 +36,14 @@ const Carousel = () => {
     >
       {slides.map((slide, index) => (
         <SwiperSlide key={index}>
-          <div className="relative h-[97vh] md:h-screen">
+          <section className="relative h-[97vh] md:h-screen text-white">
             <Image
               src={slide.image}
               alt="slide image"
               layout="fill"
               objectFit="cover"
             />
-            <div className="absolute bg-black/80 top-0 bottom-0 left-0 right-0 content">
+            <div className="absolute bg-black/75 top-0 bottom-0 left-0 right-0 content">
               <Header1 />
               <div className="relative w-full h-full flex items-center px-[3%] lg:px-[5%]">
                 <div>
@@ -59,7 +59,7 @@ const Carousel = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </SwiperSlide>
       ))}
       {/* Add Pagination Container */}
