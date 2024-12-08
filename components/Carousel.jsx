@@ -64,7 +64,7 @@ const Carousel = () => {
         </SwiperSlide>
       ))}
       {/* Add Pagination Container */}
-      <div className="swiper-pagination !bottom-10"></div>
+      <div className="swiper-pagination !bottom-20"></div>
     </Swiper>
   );
 };
