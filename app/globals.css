@@ -21,6 +21,16 @@
 }
 
 @layer components {
+  .swiper-pagination .swiper-pagination-bullet {
+    background-color: white; /* Dot color */
+    opacity: 0.7; /* Transparency for inactive dots */
+    transition: opacity 0.3s ease;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1; /* Fully visible for active dot */
+    background-color: #fbcb2b; /* Custom color for active dot */
+  }
 }
 
 @layer utilities {
