@@ -13,7 +13,6 @@ const Carousel = () => {
   return (
     <Swiper
       modules={[Autoplay, Pagination]} // Add Pagination module
-      spaceBetween={30}
       slidesPerView={1}
       loop={true}
       autoplay={{
@@ -51,10 +50,10 @@ const Carousel = () => {
                   <h1 className="text-content max-w-[95%] md:max-w-[65%]">
                     {slide.headline}
                   </h1>
-                  <p className="mt-2 text-content max-w-[75%] md:max-w-[50%] opacity-90">
+                  <p className="mt-2 text-content max-w-[75%] md:max-w-[45%] opacity-90">
                     {slide.description}
                   </p>
-                  <button className="mt-8 px-6 py-3 bg-lightBg font-semibold text-black rounded-full text-content">
+                  <button className="mt-8 px-6 h-[56px] bg-lightBg font-semibold text-black rounded-full text-content">
                     {slide.cta}
                   </button>
                 </div>
@@ -64,7 +63,7 @@ const Carousel = () => {
         </SwiperSlide>
       ))}
       {/* Add Pagination Container */}
-      <div className="swiper-pagination !bottom-20"></div>
+      <div className="swiper-pagination !bottom-20 md:!bottom-10"></div>
     </Swiper>
   );
 };
