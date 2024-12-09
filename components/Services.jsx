@@ -3,8 +3,9 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { services } from "@/lib/constants";
-import { Sparkle } from "lucide-react";
+import { MoveRight, Sparkle } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 // Register ScrollTrigger
 gsap.registerPlugin(ScrollTrigger);
@@ -65,6 +66,9 @@ const Services = () => {
           </div>
         ))}
       </div>
+      <Link href="/services" className="flex items-center gap-2 pt-7 font-semibold">
+        View All Services <MoveRight />
+      </Link>
     </section>
   );
 };

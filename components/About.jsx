@@ -54,7 +54,7 @@ const About = () => {
       <h1 ref={headingRef} className="max-w-[80%]">
         Your Trusted Partner in Compliance & Tax Solutions
       </h1>
-      <p ref={textRef}>
+      <p ref={textRef} className="md:max-w-[75%]">
         Welcome to Venture Consult, a leading agency specializing in tax
         consultancy and compliance certification services. We are dedicated to
         helping businesses stay compliant, meet their regulatory obligations,
