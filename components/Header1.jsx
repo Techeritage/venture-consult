@@ -1,4 +1,5 @@
-import { ShieldCheck, Text } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
+import { SideNav } from "./SideNav";
 
 const Header1 = () => {
   return (
@@ -9,7 +10,7 @@ const Header1 = () => {
           Venture <br /> Consult
         </h6>
       </div>
-      <Text className={``} strokeWidth={1.3} size={32} />
+      <SideNav />
     </nav>
   );
 };
