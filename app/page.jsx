@@ -1,8 +1,8 @@
 import About from "@/components/About";
 import Carousel from "@/components/Carousel";
 import Contact from "@/components/Contact";
+import FAQs from "@/components/FAQs";
 import Services from "@/components/Services";
-import React from "react";
 
 const HomePage = () => {
   return (
@@ -10,6 +10,7 @@ const HomePage = () => {
       <Carousel />
       <About />
       <Services />
+      <FAQs />
       <Contact />
     </main>
   );

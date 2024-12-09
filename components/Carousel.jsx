@@ -44,7 +44,7 @@ const Carousel = () => {
               objectFit="cover"
               priority
             />
-            <div className="absolute bg-black/40 top-0 bottom-0 left-0 right-0 content">
+            <div className="absolute bg-black/40 top-0 bottom-0 left-0 right-0">
               <Header1 />
               <div className="relative w-full h-full flex items-center px-[3%] lg:px-[5%]">
                 <div>
