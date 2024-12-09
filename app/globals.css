@@ -33,7 +33,7 @@
 
   .swiper-pagination .swiper-pagination-bullet-active {
     opacity: 1; /* Fully visible for active dot */
-    background-color: #fbcb2b; /* Custom color for active dot */
+    background-color: #FFC107; /* Custom color for active dot */
   }
 }
 

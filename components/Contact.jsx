@@ -7,7 +7,7 @@ const Contact = () => {
     <section className="sectionStyle text-white bg-primaryBg !pb-0 !px-0">
       <div className="px-[3%] md:px-[5%]">
         <div className="flex items-center gap-3">
-          <Sparkle fill="#fbcb2b" color="#fbcb2b" size={18} />
+          <Sparkle fill="#FFC107" color="#FFC107" size={18} />
           <h2>CONTACT</h2>
         </div>
         <h1 className="max-w-[80%] mt-4">Get in touch</h1>
@@ -20,7 +20,7 @@ const Contact = () => {
             <a
               href={cont.link}
               key={cont.title}
-              className="flex items-center gap-4 font-semibold w-fit"
+              className="flex items-center max-md:text-sm gap-4 font-semibold w-fit"
             >
               <span>{cont.icon}</span>
               <span>{cont.title}</span>
