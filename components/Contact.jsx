@@ -15,7 +15,7 @@ const Contact = () => {
           Reach out to us through the following channels. We&apos;re here to
           assist you with any inquiries:
         </p>
-        <div className="pl-3 mt-8 grid gap-5 pb-20">
+        <div className="pl-3 mt-12 grid gap-5 pb-20">
           {myContact.map((cont) => (
             <a
               href={cont.link}
@@ -28,7 +28,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <div className="py-5 text-xs px-[3%] md:px-[5%] md:text-sm border-t font-light flex items-center justify-end">
+      <div className="py-5 text-xs px-[3%] md:px-[5%] md:text-sm border-t font-light flex items-center justify-center md:justify-end">
         Venture Consult &copy; {year} | Created by{" "}
         <a href="tel:+2349136860915" className="text-lightBg pl-1">
           Techeritage
