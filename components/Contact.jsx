@@ -1,8 +1,8 @@
 import { myContact } from "@/lib/constants";
 import { Sparkle } from "lucide-react";
+import Footer from "./Footer";
 
 const Contact = () => {
-  const year = new Date().getFullYear();
   return (
     <section className="sectionStyle text-white bg-primaryBg !pb-0 !px-0">
       <div className="px-[3%] md:px-[5%]">
@@ -28,12 +28,7 @@ const Contact = () => {
           ))}
         </div>
       </div>
-      <div className="py-5 text-xs px-[3%] md:px-[5%] md:text-sm border-t font-light flex items-center justify-center md:justify-end">
-        Venture Consult &copy; {year} | Created by{" "}
-        <a href="tel:+2349136860915" className="text-lightBg pl-1">
-          Techeritage
-        </a>
-      </div>
+      <Footer />
     </section>
   );
 };

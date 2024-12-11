@@ -8,6 +8,7 @@ import gsap from "gsap";
 import { slides } from "@/lib/constants";
 import Image from "next/image";
 import Header1 from "./Header1";
+import Link from "next/link";
 
 const Carousel = () => {
   return (
@@ -55,7 +56,7 @@ const Carousel = () => {
                     {slide.description}
                   </p>
                   <button className="mt-10 px-6 h-[56px] bg-lightBg font-semibold text-black text-content">
-                    {slide.cta}
+                    <Link href={slide.link}>{slide.cta}</Link>
                   </button>
                 </div>
               </div>

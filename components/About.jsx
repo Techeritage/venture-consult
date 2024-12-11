@@ -2,7 +2,8 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Sparkle } from "lucide-react";
+import { MoveRight, Sparkle } from "lucide-react";
+import Link from "next/link";
 
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger);
@@ -68,6 +69,12 @@ const About = () => {
         excellence, ensuring that your business&apos;s financial operations are
         in trusted hand.
       </p>
+      <Link
+        href="/about"
+        className="flex items-center gap-2 pt-7 font-semibold w-fit"
+      >
+        Learn More About Us <MoveRight />
+      </Link>
     </section>
   );
 };

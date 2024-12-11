@@ -66,7 +66,7 @@ const Services = () => {
           </div>
         ))}
       </div>
-      <Link href="/services" className="flex items-center gap-2 pt-7 font-semibold">
+      <Link href="/services" className="flex w-fit items-center gap-2 pt-7 font-semibold">
         View All Services <MoveRight />
       </Link>
     </section>
